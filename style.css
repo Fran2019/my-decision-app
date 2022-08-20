@@ -1,0 +1,68 @@
+/* Custom Properties */
+:root {
+    --main-color: #dfe9ea;
+    /* al 100% de color */
+    --second-color-background: #8A697D;
+    --result-words: rgb(231, 212, 212);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    line-height: 1.5;
+    overflow: hidden;
+    /* para quitar cualquier scrollbar o por si nos pasamos el tamaño de pantalla*/
+    height: 200px;
+    background-color: rgb(66, 76, 117);
+}
+
+header {
+    height: 100vh;
+    /* 100% del viewport */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2 {
+    color: var(--main-color);
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+}
+
+h3#txtResult {
+    color: var(--main-color);
+    font: 20px 'Roboto', sans-serif;
+    text-align: center;
+}
+
+#btn {
+    background-color: var(--second-color-background);
+    border: none;
+    color: var(--main-color);
+    font: 20px 'Roboto';
+    letter-spacing: 2px;
+    margin: 40px;
+    padding: 30px;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 1px 10px 0px rgba(245, 245, 245, 1);
+    -moz-box-shadow: 0px 1px 10px 0px rgba(245, 245, 245, 1);
+    box-shadow: 0px 1px 10px 0px rgba(245, 245, 245, 1);
+    text-transform: uppercase;
+
+}
+
+input {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+p {
+    color: var(--result-words);
+    font: 40px 'Courier New', Courier, monospace;
+}
